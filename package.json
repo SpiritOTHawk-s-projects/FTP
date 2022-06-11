@@ -1,0 +1,16 @@
+{
+  "name": "ftp",
+  "version": "1.0.0",
+  "description": "Simple ftp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SpiritOTHawk",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.2",
+    "dotenv": "^16.0.1",
+    "ftp-srv": "^4.6.1"
+  }
+}
