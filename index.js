@@ -1,7 +1,7 @@
 require("dotenv").config();
 const FtpSrv = require('ftp-srv');
-const path = require("path");
-var color = require("cli-color");
+const path = require("path").join;
+var color = require("cli-color").yellowBright;
 
 const port=21;
 const ftpServer = new FtpSrv({
@@ -9,7 +9,7 @@ const ftpServer = new FtpSrv({
     anonymous: false
 });
 
-const config = require(path.join(__dirname, 'account.json'));
+const config = require(path(__dirname, 'account.json'));
 const username1 = config.username;
 const password1 = config.password;
 const dir = config.dir;
@@ -22,5 +22,5 @@ ftpServer.on('login', (data, resolve, reject) => {
 });
 
 ftpServer.listen().then(() => { 
-    console.log(color.yellowBright('Ftp server is starting...'))
+    console.log(color.yellowBright('Ftp server is starting...'));
 });
