@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Simple ftp server",
   "main": "index.js",
-  "author": "SpiritOTHawk",
+  "author": "SpiritOTHawk <support@wlorigin.cf>",
   "license": "ISC",
+  "homepage": "https://wlorigin.cf/",
+  "bugs": {
+    "url": "https://github.com/WasteLand-Dev/FTP/issues"
+  },
   "dependencies": {
     "cli-color": "^2.0.2",
     "dotenv": "^16.0.1",
