@@ -1,4 +1,4 @@
-Copyright (c) 2022, Karim Dzhumakov <Karimdzhumakov@internet.ru>
+Copyright (c) 2022, SpiritOTHawk <support@wlorigin.cf>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
