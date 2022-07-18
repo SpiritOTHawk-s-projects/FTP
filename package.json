@@ -10,7 +10,7 @@
     "url": "https://github.com/WasteLand-Dev/FTP/issues"
   },
   "dependencies": {
-    "cli-color": "^2.0.2",
+    "cli-color": "^2.0.3",
     "dotenv": "^16.0.1",
     "ftp-srv": "^4.6.2"
   }
