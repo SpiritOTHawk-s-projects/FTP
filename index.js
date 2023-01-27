@@ -2,11 +2,18 @@ require("dotenv").config();
 const FtpSrv = require('ftp-srv');
 const path = require("path").join;
 var color = require("cli-color").yellowBright;
+const fs = require('fs');
 
-const port=21;
+const options = {
+    key: fs.readFileSync('server-key.pem'),
+    cert: fs.readFileSync('server-cert.pem')
+};
+
+const port = 21;
 const ftpServer = new FtpSrv({
     url: "ftp://0.0.0.0:" + port,
-    anonymous: false
+    anonymous: false,
+    tls: options
 });
 
 const config = require(path(__dirname, 'account.json'));
@@ -23,4 +30,24 @@ ftpServer.on('login', (data, resolve, reject) => {
 
 ftpServer.listen().then(() => { 
     console.log(color.yellowBright('Ftp server is starting...'));
+});
+
+ftpServer.on('disconnect', ({id, newConnectionCount}) => {
+    console.log(color.bgMagenta('ID: ', id, 'Connection count: ', newConnectionCount));
+});
+
+ftpServer.on('client-error', ({context, error}) => {
+    console.log(color.bgRed(context, error));
+});
+
+ftpServer.on('server-error', ({error}) => {
+    console.log(color.red(error))
+});
+
+ftpServer.on('closing', ({}) => {
+    console.log('closing');
+});
+
+ftpServer.on('closed', ({}) => {
+    console.log('FTP server closed');
 });
