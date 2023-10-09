@@ -12,8 +12,8 @@ dependencies:
     specifier: ^16.3.1
     version: 16.3.1
   ftp-srv:
-    specifier: ^4.6.2
-    version: 4.6.2
+    specifier: ^4.6.3
+    version: 4.6.3
   uuid:
     specifier: 9.0.1
     version: 9.0.1
@@ -188,8 +188,8 @@ packages:
       path-exists: 4.0.0
     dev: false
 
-  /ftp-srv@4.6.2:
-    resolution: {integrity: sha512-BaBE2PV5tfWNuBxGTMlswnbaUGbWJYX3POOv4Li5HOnqPS/+DLbCQBDM7WMc4Ll6BVPO8t27ziXOLGfPJeJYpg==}
+  /ftp-srv@4.6.3:
+    resolution: {integrity: sha512-k9q06Ab04CwY7n9HL5H5Zn+/ccohUUH8K2UjQ6dnAlE3NIFdqFI8Paanq+WFbfawZXeK29vP0zgZWfr28N33dw==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
