@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.0.3
     version: 2.0.3
   dotenv:
-    specifier: ^16.3.2
-    version: 16.3.2
+    specifier: ^16.4.1
+    version: 16.4.1
   ftp-srv:
     specifier: ^4.6.3
     version: 4.6.3
@@ -115,8 +115,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /dotenv@16.3.2:
-    resolution: {integrity: sha512-HTlk5nmhkm8F6JcdXvHIzaorzCoziNQT9mGxLPVXW8wJF1TiGSL60ZGB4gHWabHOaMmWmhvk2/lPHfnBiT78AQ==}
+  /dotenv@16.4.1:
+    resolution: {integrity: sha512-CjA3y+Dr3FyFDOAMnxZEGtnW9KBR2M0JvvUtXNW+dYJL5ROWxP9DUHCwgFqpMk0OXCc0ljhaNTr2w/kutYIcHQ==}
     engines: {node: '>=12'}
     dev: false
 
